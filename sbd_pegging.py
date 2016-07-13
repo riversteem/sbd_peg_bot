@@ -58,7 +58,7 @@ while True:
   if sbdBalAvail >= minOrder:
     #Place Ask at target
     print("\n<<<<<<< Selling %f SBD @ %0.6f SBD/BTC\n" % (sbdBalAvail, askRatio))
-    result = bittrex.sell_limit(market, sbdBalAvail, bidRatio)
+    result = bittrex.sell_limit(market, sbdBalAvail, askRatio)
 
 
   print("Open Orders:")
