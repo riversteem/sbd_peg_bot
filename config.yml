@@ -1,17 +1,26 @@
 #Exchange and Feed API Ketys
 keys:
    bittrex:
-      Pub: p9999999999999999999999999999999
-      Sec: s9999999999999999999999999999999
+      Pub: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+      Sec: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
    coinbase:
-      Pub: p999999999999999
-      Sec: s9999999999999999999999999999999
+      Pub: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+      Sec: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+accounts:
+   steem: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 markets:
    sbd_btc:
       market: "BTC-SBD"
-      spread: 2.5 
+      spread: 2
       #order size in USD
-      min_order_size: 25
-      max_order_size: 5 #Not currently used
+      min_order_size: 5
+      max_order_size: 999
+      #Initial value for BTC
+      BTCUSD: 0.00151734
+      feed_tolorance: 0.01
+      bot_allocation: 2000
+      #messured in base (SBD)
+      profit_threshold: 100
